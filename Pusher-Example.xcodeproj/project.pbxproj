@@ -14,6 +14,7 @@
 		77D3CA801D4A581F00FBCCA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77D3CA7E1D4A581F00FBCCA1 /* LaunchScreen.storyboard */; };
 		77D3CA8B1D4A581F00FBCCA1 /* Pusher_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3CA8A1D4A581F00FBCCA1 /* Pusher_ExampleTests.swift */; };
 		77D3CA961D4A581F00FBCCA1 /* Pusher_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D3CA951D4A581F00FBCCA1 /* Pusher_ExampleUITests.swift */; };
+		A387BD23700F01F7905448FE /* Pods_Pusher_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3594C660955027C77D5475BA /* Pods_Pusher_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3594C660955027C77D5475BA /* Pods_Pusher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pusher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60B0D3C60134748776B198AD /* Pods-Pusher-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher-Example/Pods-Pusher-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		77D3CA721D4A581F00FBCCA1 /* Pusher-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pusher-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D3CA751D4A581F00FBCCA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77D3CA771D4A581F00FBCCA1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		77D3CA911D4A581F00FBCCA1 /* Pusher-ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pusher-ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77D3CA951D4A581F00FBCCA1 /* Pusher_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pusher_ExampleUITests.swift; sourceTree = "<group>"; };
 		77D3CA971D4A581F00FBCCA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9848E71A08D968E79CF8F23C /* Pods-Pusher-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pusher-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pusher-Example/Pods-Pusher-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A387BD23700F01F7905448FE /* Pods_Pusher_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A2BC552B5965894072A427E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3594C660955027C77D5475BA /* Pods_Pusher_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		77D3CA691D4A581F00FBCCA1 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				77D3CA891D4A581F00FBCCA1 /* Pusher-ExampleTests */,
 				77D3CA941D4A581F00FBCCA1 /* Pusher-ExampleUITests */,
 				77D3CA731D4A581F00FBCCA1 /* Products */,
+				CE4F4946C71CAA7B88422E28 /* Pods */,
+				2A2BC552B5965894072A427E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = "Pusher-ExampleUITests";
 			sourceTree = "<group>";
 		};
+		CE4F4946C71CAA7B88422E28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60B0D3C60134748776B198AD /* Pods-Pusher-Example.debug.xcconfig */,
+				9848E71A08D968E79CF8F23C /* Pods-Pusher-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77D3CA9A1D4A581F00FBCCA1 /* Build configuration list for PBXNativeTarget "Pusher-Example" */;
 			buildPhases = (
+				FE4D550053D0F3469E2234E0 /* [CP] Check Pods Manifest.lock */,
 				77D3CA6E1D4A581F00FBCCA1 /* Sources */,
 				77D3CA6F1D4A581F00FBCCA1 /* Frameworks */,
 				77D3CA701D4A581F00FBCCA1 /* Resources */,
+				1A6652148891B69BA3197347 /* [CP] Embed Pods Frameworks */,
+				D662A203F3B578DBA0351169 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +277,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A6652148891B69BA3197347 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pusher-Example/Pods-Pusher-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D662A203F3B578DBA0351169 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pusher-Example/Pods-Pusher-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE4D550053D0F3469E2234E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77D3CA6E1D4A581F00FBCCA1 /* Sources */ = {
@@ -397,9 +472,11 @@
 		};
 		77D3CA9B1D4A581F00FBCCA1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60B0D3C60134748776B198AD /* Pods-Pusher-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Pusher-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hutonglabs.Pusher-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,9 +485,11 @@
 		};
 		77D3CA9C1D4A581F00FBCCA1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9848E71A08D968E79CF8F23C /* Pods-Pusher-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Pusher-Example/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hutonglabs.Pusher-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +561,7 @@
 				77D3CA9C1D4A581F00FBCCA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77D3CA9D1D4A581F00FBCCA1 /* Build configuration list for PBXNativeTarget "Pusher-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +570,7 @@
 				77D3CA9F1D4A581F00FBCCA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77D3CAA01D4A581F00FBCCA1 /* Build configuration list for PBXNativeTarget "Pusher-ExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +579,7 @@
 				77D3CAA21D4A581F00FBCCA1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
