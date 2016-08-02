@@ -34,8 +34,8 @@ class ViewController: UIViewController, ConnectionStateChangeDelegate {
         pusher = Pusher(key: "11949d6750bc393d36be", options: ["secret":"32b45110718af7648325"])
         // remove the debugLogger from the client options if you want to remove the
         // debug logging, or just change the function below
-  //      let debugLogger = { (text: String) in debugPrint(text) }
-//        pusher.connection.debugLogger = debugLogger
+        //let debugLogger = { (text: String) in debugPrint(text) }
+        //pusher.connection.debugLogger = debugLogger
         
         
         pusher.connection.stateChangeDelegate = self
